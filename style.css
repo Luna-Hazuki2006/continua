@@ -5,3 +5,26 @@
 #purgatorio h2 {
     color: green;
 }
+#paraíso h2 {
+    color: blueviolet;
+}
+section {
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 15px;
+}
+#infierno {
+    border: 2px dotted brown
+}
+#purgatorio {
+    border: 2px dashed green;
+}
+#paraíso {
+    border: 2px outset blueviolet;
+}
+header {
+    width: 100%;
+    margin: auto;
+}
