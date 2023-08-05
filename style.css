@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(lavender, lavenderblush, mintcream);
+}
+
 #infierno h2 {
     color: brown;
 }
@@ -28,4 +32,11 @@ section {
 header {
     width: 100%;
     margin: auto;
+}
+
+ol ol {
+    border: 1px solid salmon;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
