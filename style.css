@@ -83,13 +83,15 @@ ol ol {
 }
 
 section img {
-    width: 10%;
+    width: 20%;
     transition-duration: 5s;
 }
 
 section img:hover {
     width: 50%;
 }
+
+
 
 @keyframes colores {
     0% {
