@@ -2,6 +2,30 @@ body {
     background-image: linear-gradient(lavender, lavenderblush, azure);
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: #111111;
+}
+
 #infierno h2 {
     color: brown;
 }
@@ -21,13 +45,22 @@ section {
     border-radius: 15px;
 }
 #infierno {
-    border: 2px dotted brown
+    border: 2px dotted brown;
+    animation-name: infiernos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #purgatorio {
     border: 2px dashed green;
+    animation-name: purgatorios;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 #paraíso {
     border: 2px outset blueviolet;
+    animation-name: paraisos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 header {
     width: 100%;
@@ -43,12 +76,18 @@ header h1 {
 
 ol ol {
     border: 1px solid salmon;
+    border-radius: 10px;
     list-style-type: none;
     padding: 0;
     text-align: center;
 }
 
 section img {
+    width: 10%;
+    transition-duration: 5s;
+}
+
+section img:hover {
     width: 50%;
 }
 
@@ -67,5 +106,59 @@ section img {
     }
     100% {
         color: gray;
+    }
+}
+
+@keyframes infiernos {
+    0% {
+        border: 2px dotted brown;
+    }
+    25% {
+        border: 2px dashed brown;
+    }
+    50% {
+        border: 2px solid brown;
+    }
+    75% {
+        border: 2px solid red;
+    }
+    100% {
+        border: 2px dotted brown;
+    }
+}
+
+@keyframes purgatorios {
+    0% {
+        border: 2px dashed green;
+    }
+    25% {
+        border: 2px dotted green;
+    }
+    50% {
+        border: 2px solid green;
+    }
+    75% {
+        border: 2px solid greenyellow;
+    }
+    100% {
+        border: 2px dashed green;
+    }
+}
+
+@keyframes paraisos {
+    0% {
+        border: 2px solid blueviolet;
+    }
+    25% {
+        border: 3px solid plum;
+    }
+    50% {
+        border: 4px solid purple;
+    }
+    75% {
+        border: 3px solid palevioletred;
+    }
+    100% {
+        border: 2px dashed blueviolet;
     }
 }
