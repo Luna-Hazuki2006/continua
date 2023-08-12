@@ -34,9 +34,38 @@ header {
     margin: auto;
 }
 
+header h1 {
+    text-align: center;
+    animation-name: colores;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
 ol ol {
     border: 1px solid salmon;
     list-style-type: none;
     padding: 0;
     text-align: center;
+}
+
+section img {
+    width: 50%;
+}
+
+@keyframes colores {
+    0% {
+        color: gray;
+    }
+    25% {
+        color: yellowgreen;
+    }
+    50% {
+        color: cadetblue;
+    }
+    75% {
+        color: crimson;
+    }
+    100% {
+        color: gray;
+    }
 }
