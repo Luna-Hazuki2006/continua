@@ -92,7 +92,14 @@ section img:hover {
 }
 
 @media screen and (max-width: 576px) {
-    
+    section img {
+        text-align: center;
+        width: 100%;
+    }
+
+    section img:hover {
+        text-align: center;
+    }
 }
 
 @keyframes colores {
