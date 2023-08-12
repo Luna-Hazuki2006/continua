@@ -83,12 +83,12 @@ ol ol {
 }
 
 section img {
-    width: 20%;
+    width: 30%;
     transition-duration: 5s;
 }
 
 section img:hover {
-    width: 50%;
+    width: 60%;
 }
 
 @media screen and (max-width: 576px) {
